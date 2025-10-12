@@ -200,7 +200,7 @@
     <figure class="polaroid">
       <!-- 🔁 Eigenes Foto hier einsetzen -->
       <img class="photo" id="photo" src="mein_bild.png" alt="Dein Foto">
-      <figcaption class="caption">„Papa liebt dich – und ist unendlich stolz auf alles, was du erreicht hast.“</figcaption>
+      <figcaption class="caption">„Papa u. Mama lieben dich – und sind unendlich stolz auf alles, was du erreicht hast.“</figcaption>
     </figure>
 
     <p class="sub" id="sub2">
@@ -261,6 +261,15 @@
         pointer-events: none;
         user-select: none;
       }
+        @media (max-width: 600px) {
+          .bigConfettiText {
+            font-size: clamp(18px, 6vw, 28px) !important;
+            max-width: 90vw;
+            white-space: normal;
+            padding: 10px 8vw;
+            word-break: break-word;
+          }
+        }
     `;
     document.head.appendChild(styleBigText);
     /* ========= PERSONALISETABLE SETTINGS =========
